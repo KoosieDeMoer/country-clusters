@@ -58,9 +58,9 @@ target_numbers = le1.fit_transform(target)
 # plt.scatter(data_scaled[:, 0], data_scaled[:, 1], c=target_numbers, linewidths=0, s=30)
 plt.scatter(data_scaled_pca[:, 0], data_scaled_pca[:, 1], c=cluster_labels, linewidths=0, s=30)
 
-plt.axis([-2.5, 0, -1, 1])
+# plt.axis([-2.5, 0, -1, 1])
 
-for i, txt in enumerate(labels):
-    plt.annotate(txt, (data_scaled_pca[i, 0], data_scaled_pca[i, 1]))
+#for i, txt in enumerate(labels):
+#    plt.annotate(txt, (data_scaled_pca[i, 0], data_scaled_pca[i, 1]))
 plt.show()
 
