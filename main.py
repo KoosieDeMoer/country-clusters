@@ -31,6 +31,11 @@ scaler.fit(data)
 
 data_scaled = scaler.transform(data)
 
+
+# turn
+dbscan = cluster.DBSCAN()
+cluster_labels = dbscan.fit_predict(data_scaled)
+
 pca = decomposition.PCA(n_components=2)
 
 data_scaled_pca = pca.fit_transform(data_scaled)
@@ -42,9 +47,6 @@ print(pca.components_)
 
 print(target)
 
-# turn
-dbscan = cluster.DBSCAN()
-cluster_labels = dbscan.fit_predict(data_scaled_pca)
 
 le1 = preprocessing.LabelEncoder()
 continent_codes = ["AF", "AN", "AS", "EU", "NO", "OC", "SA", "ZZ"]
