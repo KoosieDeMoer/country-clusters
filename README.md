@@ -14,4 +14,6 @@ The follwing pipeline was used:
 
 There really are no clusters. But there are some interesting results (possibly artefacts)
 
-![Sample Table](all_countries_unlabled.png?raw=true "All Countries - unlabled")
+![](all_countries_unlabled.png?raw=true "All Countries - unlabled")
+![](the_artefact.png?raw=true "The Artefact?")
+![](all_countries_labled.png?raw=true "All Countries - labled")
